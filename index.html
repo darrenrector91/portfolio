@@ -21,6 +21,7 @@
 	<link href="css/rotating-card.css" rel="stylesheet" />
 	<link href="css/styles.css" rel="stylesheet">
 	<link href="css/form.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/nav.css">
 
 
 </head>
@@ -29,27 +30,16 @@
 	<!--####################################
 			HEADER
 #####################################-->
-	<div class="navbar navbar-inverse navbar-fixed-top">
-		<div class="container">
-			<a href="#home" class="navbar-brand">Darren Rector Portfolio</a>
-			<button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollpase">
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-			</button>
-			<div class="collapse navbar-collapse navHeaderCollpase">
-				<ul class="nav navbar-nav navbar-right navigation">
-					<li><a href="#home" class="active"><i class="fas fa-home" style="margin-right: 10px;"></i>Home</a></li>
-					<li><a href="#portfolio"><i class="fas fa-book-open" style="margin-right: 10px;"></i>Portfolio</a></li>
-					<li><a href="#about"><i class="fas fa-user" style="margin-right: 10px;"></i>About Me</a></li>
-					<li><a href="#work"><i class="fas fa-laptop" style="margin-right: 10px;"></i>Experience</a></li>
-					<li><a href="#education"><i class="fas fa-school" style="margin-right: 10px;"></i>Education</a></li>
-					<li><a href="resume_docs/resume.pdf" target="_blank"><i class="far fa-file" style="margin-right: 10px;"></i>Résumé</a></li>
-					<button type="button" class="btn btn-info btn-lg turned-button contact-button" data-toggle="modal" data-target="#myModal">Contact</button>
-				</ul>
-			</div>
-		</div>
-	</div>
+<div id="mySidenav" class="sidenav">
+	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	<a href="#portfolio">Portfolio</a>
+	<a href="#about">About</a>
+	<a href="#work">Experience</a>
+	<a href="#education">Education</a>
+	<a href="#contact">Contact</a>
+</div>
+<div id="main">
+	<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776</span>
 	<!--####################################
 			   INTRO
 #####################################-->
@@ -488,6 +478,8 @@
 
 
 	</footer>
+</div>
+
 
 
 
@@ -506,6 +498,7 @@
 	<script src="js/scroll-to-top.js"></script>
 	<script src="js/jquery.backTop.js"></script>
 	<script src="js/form.js"></script>
+	<script src="js/nav.js"></script>
 
 </body>
 
